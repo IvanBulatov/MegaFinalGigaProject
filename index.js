@@ -1,14 +1,14 @@
 let express = require(`express`);
 let app = express();
 let cors = require('cors')
-let port = 3000;
+let port = 3005;
 app.listen(port, function () {
     console.log(`Сервер запущен: http://localhost:${port}`)
 });
 
 app.use(cors())
 app.use(express.json())
-app.use(express.static('public'));
+app.use(express.static('NEpublic'));
 
 
 
